@@ -16,19 +16,17 @@ To write a Python program that accepts a string and removes the character at a s
 
 ## 💻 Program
 ```
-import re
-l1=[] 
-
-items=['goal', 'new', 'user', 'sit', 'eat', 'dinner'] 
-for i in items: 
-
-   if not re.search(r"e",i): 
-      l1.append(i) 
-
-print(l1)
+def remove(a,n):
+    for i in range(0,len(a)):
+        if(i!=n):
+            print(a[i],end='')
+a=input()
+n=int(input())
+remove(a,n)
 ```
 ## Output
-<img width="503" height="169" alt="530385910-c2595b7a-71d9-4d33-a2f3-3c3a70de0b9f" src="https://github.com/user-attachments/assets/22d1d854-f597-45f6-a5a4-791ff8394c97" />
+
+<img width="545" height="173" alt="530386207-420c1710-33d3-4dd1-9013-dd2acd441166" src="https://github.com/user-attachments/assets/19d6f1e4-f01e-4d60-93d4-e6726d7fcbce" />
 
 ## Result
 Thus, the program has been successfully executed.
